@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-12 ml-0 pl-0">
+            <div class="col-12 m-0 p-0">
                 <header class="col header m-0 p-0">
                     <nav class="navbar navbar-expand-lg navbar-light bg-light m-0 p-0">
                         <a class="navbar-brand header__logo-box" href="#">
@@ -20,23 +20,24 @@
 
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
-                              <li class="nav-item  header__nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                <li class="nav-item dropdown header__nav-item">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Features
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <a class="dropdown-item" href="#">Staffing</a>
+                                      <a class="dropdown-item" href="#">Employee records</a>
+                                      <a class="dropdown-item" href="#">Leaves Management</a>
+                                      <a class="dropdown-item" href="#">Time tracking</a>
+                                    </div>
+                                </li>  
+                              <li class="nav-item  header__nav-item">
+                                <a class="nav-link" href="#">Browse resume <span class="sr-only">(current)</span></a>
                               </li>
                               <li class="nav-item header__nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="#">FAQ</a>
                               </li>
-                              <li class="nav-item dropdown header__nav-item">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Dropdown
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <a class="dropdown-item" href="#">Action</a>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                              </li>
+                              
                             </ul>
                             
                                 <ul class="navbar-nav justify-content-end">
@@ -113,15 +114,16 @@
                     <img src="./img/paper_3.svg" alt="" class="icon-img">
                     <span class="information-block-1__list-item-text" >HR employee database</span>
                 </div>
-                <div class="information-block-1__list-item--dashboard">
+                <div class="information-block-1__list-item--dashboard d-flex  flex-column">
                     <div>
                         <img src="./img/settings_2.svg" alt="" class="icon-img">
                     <span class="information-block-1__list-item-text">Dashboard</span>    
                     </div> 
+                    <div class="dashboard-btn-block">
+                      <a href="#" class="dashboard-btn">Learn more <img src="./img/arrow.png" />  </a>
+                  </div> 
                 </div>
-                <div class="dashboard-btn-block">
-                    <a href="#" class="dashboard-btn">Learn more <img src="./img/arrow.png" style="margin-left: 12.6px;" />  </a>
-                </div>    
+                  
             </div>
         </div>
         </div>
@@ -138,49 +140,93 @@
             </div>
 
             <div class="d-flex justify-content-center benefits-block__cards">
-                <div class="col benefits-block__cards-item ">
+                <div class="benefits-block__cards-item ">
                     <div class="icon d-flex justify-content-center align-items-center benefits-block__icon-position">
-                        <img src="./img/Write.png.png" alt="" class="" width="35" height="35">
+                        <img src="./img/Write.png.png" alt="" class="icon__image" >
                     </div>
                     <div class="d-flex justify-content-between flex-column" style="height: 100%">
-                        <h2 class="sub-heading-primary" style="color:#585B60; margin-top: 35%;">Staffing Software</h2>
+                        <h2 class="sub-heading-primary" style="color:#585B60; margin-top:30%;">Staffing Software</h2>
                         <div class="text">
                             List, sort and compare CV, make notes, set statuses. Never miss a single detail while hiring.
                         </div>
-                        <a href="#" class="cards-block-text-box__link-content">Learn more <img src="./img/ShapeArrow.png" alt="" style="margin-left: 50px"></a>
+                        <div class="learn-more-link d-flex justify-content-between">
+                          <div>
+                            <a href="#" class="cards-block-text-box__link-content">Learn more</a>
+                          </div>
+                          <a href="#" class="cards-block-text-box__link-content"><img src="./img/ShapeArrow.png" alt=""></a>
+                        </div>
+                        
                     </div>
                 </div>
+
+                <div class="benefits-block__cards-item ">
+                  <div class="icon d-flex justify-content-center align-items-center benefits-block__icon-position">
+                      <img src="./img/Write.png.png" alt="" class="icon__image" >
+                  </div>
+                  <div class="d-flex justify-content-between flex-column" style="height: 100%">
+                      <h2 class="sub-heading-primary" style="color:#585B60; margin-top:30%;">Employee Time Tracking</h2>
+                      <div class="text">
+                        Track employee time, attendance, accept or reject time off. 
+                      </div>
+                      <div class="learn-more-link d-flex justify-content-between">
+                        <div>
+                          <a href="#" class="cards-block-text-box__link-content">Learn more</a>
+                        </div>
+                        <a href="#" class="cards-block-text-box__link-content"><img src="./img/ShapeArrow.png" alt=""></a>
+                      </div>
+                      
+                  </div>
+              </div>
+
+              <div class="benefits-block__cards-item ">
+                <div class="icon d-flex justify-content-center align-items-center benefits-block__icon-position">
+                    <img src="./img/Write.png.png" alt="" class="icon__image" >
+                </div>
+                <div class="d-flex justify-content-between flex-column" style="height: 100%">
+                    <h2 class="sub-heading-primary" style="color:#585B60; margin-top:30%;">Vacation Management</h2>
+                    <div class="text">
+                      oportere patrioque sit et, eum ne prima nemore perfecto. Eu cibo quidam eleifend per.
+                    </div>
+                    <div class="learn-more-link d-flex justify-content-between">
+                      <div>
+                        <a href="#" class="cards-block-text-box__link-content">Learn more</a>
+                      </div>
+                      <a href="#" class="cards-block-text-box__link-content"><img src="./img/ShapeArrow.png" alt=""></a>
+                    </div>
+                    
+                </div>
+            </div>
                 
-                <div class="col benefits-block__cards-item">
-                    <div class="benefits-block__icon">
-                        <img src="./img/Calendar 2@2x.png.png" alt="" class="benefits-block__icon-image">
-                    </div>
-                    <div class="cards-block-text-box">
-                         <h2 class="cards-block-text-box-header">Employee Time Tracking</h2>
-                    <div class="cards-block-text-box__text">
-                        Track employee time, attendance, accept or reject time off.
-                    </div>
-                        <a href="#" class="cards-block-text-box__link-content">Learn more <img src="./img/ShapeArrow.png" alt="" style="margin-left: 211.3px"></a>
-                    </div>
-                </div>
-              
-                <div class="col benefits-block__cards-item">
-                    <div class="benefits-block__icon">
-                        <img src="./img/Clock 1@2x.png.png" alt="" class="benefits-block__icon-image">
-                    </div>
-                    <div class="d-flex flex-column">
-                        <h2 class="sub-heading-primary">Vacation Management</h2>
-                    <div class="cards-block-text-box__text">
-                        oportere patrioque sit et, eum ne prima nemore perfecto. Eu cibo quidam eleifend per.
-                    </div>
-                        <a href="#" class="cards-block-text-box__link-content">Learn more <img src="./img/ShapeArrow.png" alt="" style="margin-left: 211.3px"></a>
-                    </div>
-                </div>
+               
             </div>
         </div>
         
-        
+        <div class="row">
+          <div class="col image-block d-flex flex-column justify-content-center align-items-center">
+      
+             
+                  <div class="image-block__text">
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris quis nostrud nisi ut aliquip ex ea commodo consequat.”</p>
+                  </div>
+                   <div>
+                     <p class="image-block__author">Artur Demyanov, Designer</p>
+                   </div>
+                    
+                    <div class="dots-block d-flex justify-content-center">
+                        <div class="dot">
+                        </div>
+                        <div class="dot-not-active">
+                        </div>
+                        <div class="dot-not-active">
+                        </div>
+                    </div>
+               
+            
         </div>
+        </div>
+        
+      </div>
 
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

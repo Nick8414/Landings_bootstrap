@@ -1,7 +1,15 @@
 .icon {
-    background-color: #fe5a50;
+    background-color: $color-red;
     border-radius: 15px;
-    width: 75px;
-    height: 75px;
+    width: 6.5vw;
+    height: 6.5vw;
+    box-shadow: 0px 8px 25px #FE5A506B;
+
+    &__image {
+
+        width: 3.4vw;
+        height: 3.4vw;
+
+    }
     
 }
