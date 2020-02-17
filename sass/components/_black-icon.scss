@@ -1,10 +1,10 @@
 @import "../mixins/icon-color";
-.icon {
-    @include icon-color($color-red);
+.black-icon {
+    @include icon-color($color-black);
     border-radius: 15px;
     width: 6.5vw;
     height: 6.5vw;
-    box-shadow: 0px 8px 25px #FE5A506B;
+    box-shadow: 0px 8px 25px #21232266;
     &__image {
         width: 3.4vw;
         height: 3.4vw;
