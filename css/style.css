@@ -1,5 +1,5 @@
 body {
-  font-family: "Montserrat", sans-serif !important; }
+  font-family: 'Montserrat', sans-serif !important; }
 
 .heading-primary {
   font-size: 3.49vw;
@@ -9,60 +9,32 @@ body {
 .sub-heading-primary {
   font-size: 1.03vw;
   font-weight: 600;
-  color: #585B60; }
-
-.text {
-  font-size: 1.03vw;
   color: #585b60; }
 
-.header {
-  border: 1px solid #707070; }
-  .header__logo-box {
-    background: #212322;
-    width: 24.3vw;
-    height: 7rem;
-    position: relative; }
-  .header__logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 11.5vw; }
-  .header__nav-item {
-    border-right: 2px solid #e5e5e5;
-    height: 100%;
-    color: #494949;
-    text-decoration: none;
-    padding: 22px 44px;
-    font-size: 1.4rem;
-    font-weight: 600; }
+.text {
+  color: #585b60;
+  text-align: center; }
 
-.navbar-light .navbar-nav .active > .nav-link {
-  color: #fe5a50 !important; }
+.top-nav {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  max-width: 1920px;
+  margin: auto; }
+  .top-nav_menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; }
+    .top-nav_menu li {
+      margin-right: 45px; }
+      .top-nav_menu li a {
+        text-decoration: none;
+        color: #494949;
+        font-size: 1.4rem;
+        font-weight: 600; }
 
-.header-btn:link,
-.header-btn:visited {
-  color: #494949;
-  text-decoration: none;
-  padding: 14px 73px 14px 74px;
-  font-size: 1.4rem;
-  font-weight: 600; }
-
-.header__user-btn--sign-in:link,
-.header__user-btn--sign-in:visited {
-  color: #494949;
-  text-decoration: none;
-  font-size: 1.4rem;
-  font-weight: 600; }
-
-.user-btn--sign-up:link,
-.user-btn--sign-up:visited {
-  color: #fe5a50;
-  text-decoration: none;
-  font-size: 1.4rem;
-  font-weight: 600;
-  padding-left: 2.1vw !important;
-  padding-right: 3.4vw !important; }
+.logo {
+  background-color: #000; }
 
 .footer {
   border-top: 1px solid #e5e5e5;
@@ -136,33 +108,8 @@ li {
 
 .get-started-form {
   text-align: center;
-  margin-top: 1.5rem; }
-
-.get-started__input {
-  height: 6.5vh !important;
-  width: 14.3vw !important;
-  font-size: 1vw !important;
-  font-weight: 600 !important;
-  color: #c2c9db !important;
-  border-radius: 8px 0 0 8px !important;
-  background: #ffffff 0% 0% no-repeat padding-box !important;
-  box-shadow: 0px 35px 55px #0000000f !important;
-  border: 1px solid #e5e5e5 !important; }
-
-.get-started__input::placeholder {
-  color: #c2c9db !important; }
-
-.get-started__btn {
-  background-color: #fe5a50 !important;
-  color: #fff !important;
-  border-radius: 0 8px 8px 0 !important;
-  font-size: 1vw !important;
-  font-weight: 600 !important;
-  border: none !important;
-  background: #fe5a50 0% 0% no-repeat padding-box !important;
-  box-shadow: 0px 8px 25px #fe5a506b !important;
-  width: 11.9vw !important;
-  height: 6.5vh; }
+  margin-top: 1.5rem;
+  border: 1px solid black; }
 
 html {
   /* font-size: 10px; */
@@ -172,79 +119,7 @@ body {
   background: #f5f5f5; }
 
 .heading {
-  margin-top: 7rem; }
-
-.heading__primary {
-  font-size: 3.5vw;
-  font-weight: 600;
-  line-height: 46px; }
-
-.heading__text-block {
-  margin-top: 14px;
-  text-align: center; }
-
-.information-block-1 {
-  /* display: flex;
-  justify-content: center; */
-  margin-top: 91.6px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 87vw; }
-
-.top-image {
-  width: 50vw; }
-
-.browser-image {
-  width: 50vw; }
-
-.information-block-1__list {
-  margin-left: 5.4vw; }
-
-.information-block-1__header {
-  font-size: 2.5vw;
-  font-weight: 600;
-  margin-bottom: 30px; }
-
-.information-block-1__list-item {
-  margin-left: 2.08vw;
-  display: flex;
-  align-items: center;
-  margin-bottom: 49px; }
-
-.information-block-1__list-item-text {
-  font-size: 15px;
-  padding-left: 22px; }
-
-.information-block-1__list-item--dashboard {
-  font-weight: 600;
-  margin-left: 2.08vw;
-  margin-bottom: 17px;
-  font-size: 24px;
-  color: #fe5a50; }
-
-.dashboard-btn-block {
-  margin-left: 3.49vw; }
-
-.dashboard-btn:link,
-.dashboard-btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 5px 30px 5px 20px;
-  display: inline-block;
-  border-radius: 5px;
-  transition: all 0.2s;
-  position: relative;
-  font-size: 0.6vw;
-  background-color: #fe5a50;
-  color: #fff; }
-
-.dashboard-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-
-.dashboard-btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  border: solid 1px black; }
 
 .benefits-block {
   width: 80.1vw;
