@@ -5,13 +5,17 @@
 //   padding: 0;
 //   box-sizing: inherit;
 // }
-@import 'abstracts/variables';
-@import 'base/typography';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'components/icon';
-@import 'components/black-icon';
-@import 'components/get-started-form';
+@import "abstracts/variables";
+@import "base/typography";
+@import "layout/header";
+@import "layout/footer";
+@import "components/icon";
+@import "components/black-icon";
+@import "components/get-started-form";
+
+//PAGES
+@import "pages/landingPage1";
+
 html {
   /* font-size: 10px; */
   font-size: 62.5%;
@@ -164,7 +168,7 @@ body {
 }
 
 .image-block {
-  background-image: url('../img/Mountains.png');
+  background-image: url("../img/Mountains.png");
   background-size: cover;
   background-position: top;
   height: 43.3vh;
