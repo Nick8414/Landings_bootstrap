@@ -1,62 +1,73 @@
+$max-screen-width: 1920px;
+
 .footer {
-    margin-top: 96px;
-    margin-bottom: 65px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    // width: 83.5vw;
+  max-width: $max-screen-width;
+  margin-top: 1%;
+  //   margin-bottom: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  // width: 80%;
+  // width: 83.5vw;
+  //   margin: 2.5% 5%;
 }
 
 .footer-content {
-    border-top: 1px solid #e5e5e5;
-    // margin-top: 50.6px;
-    border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+  // margin-top: 50.6px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .footer-content-item {
-    // font-size: 0.94vw;
-    margin: 7px 0;
-    color: #9da6ac;
+  // font-size: 0.94vw;
+  margin: 7px 0;
+  color: #9da6ac;
 }
 
 .footer-content-item-header {
-    //font-size: 1.25vw;
-    font-weight: 600;
-    margin-bottom: 12px;
-    color: #585b60;
+  //font-size: 1.25vw;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #585b60;
 }
 
 ul {
-    padding: 0;
+  padding: 0;
 }
 
 li {
-    list-style-type: none;
-    a {
-        text-decoration: none;
-        color: #9da6ac;
-    }
+  list-style-type: none;
+  a {
+    text-decoration: none;
+    color: #9da6ac;
+  }
 }
 
 .footer-footer {
-    margin-top: 42.5px;
-    // font-size: 0.94vw;
-    font-weight: 600;
-    line-height: 31.8px;
-    color: #9da6ac;
+  margin-top: 42.5px;
+  // font-size: 0.94vw;
+  font-weight: 600;
+  line-height: 31.8px;
+  color: #9da6ac;
 }
 
 .lang-select {
-    border: none;
-    font-size: 0.94vw;
-    font-weight: 800;
-    color: #585b60;
-    -moz-appearance: none;
-    /* Firefox */
-    -webkit-appearance: none;
-    /* Safari and Chrome */
-    appearance: none;
-    background: url('./img/select_arrow.png') no-repeat right center;
-    outline: 0;
-    width: 90px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #585b60;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  appearance: none;
+  background: url('./img/select_arrow.png') no-repeat right center;
+  outline: 0;
+  width: 90px;
+}
+
+.footer-nav {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
 }
