@@ -25,33 +25,51 @@ body {
     padding: 0;
     margin: 0;
     display: flex; }
-    .top-nav_menu li {
-      margin-right: 45px; }
-      .top-nav_menu li a {
+    .top-nav_menu .nav-item {
+      border-right: 2px solid #e5e5e5;
+      height: 100%; }
+      .top-nav_menu .nav-item a {
         text-decoration: none;
         color: #494949;
         font-size: 1.4rem;
-        font-weight: 600; }
+        font-weight: 600;
+        padding: 15px 25px; }
+    .top-nav_menu li a {
+      text-decoration: none;
+      color: #494949;
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-right: 45px; }
+
+.nav-item {
+  border-right: 2px solid #e5e5e5;
+  height: 100%; }
+  .nav-item a {
+    text-decoration: none;
+    color: #494949;
+    font-size: 1.4rem;
+    font-weight: 600; }
 
 .logo {
-  background-color: #000; }
+  background-color: #000;
+  padding: 15px 20px; }
 
 .footer {
-  border-top: 1px solid #e5e5e5;
   margin-top: 96px;
   margin-bottom: 65px;
   margin-left: auto;
   margin-right: auto;
-  width: 83.5vw; }
+  width: 80%; }
 
 .footer-content {
+  border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5; }
 
 .footer-content-item {
+  margin: 7px 0;
   color: #9da6ac; }
 
 .footer-content-item-header {
-  font-size: 1.25vw;
   font-weight: 600;
   margin-bottom: 12px;
   color: #585b60; }
@@ -61,10 +79,12 @@ ul {
 
 li {
   list-style-type: none; }
+  li a {
+    text-decoration: none;
+    color: #9da6ac; }
 
 .footer-footer {
   margin-top: 42.5px;
-  font-size: 0.94vw;
   font-weight: 600;
   line-height: 31.8px;
   color: #9da6ac; }
@@ -105,8 +125,32 @@ li {
 
 .get-started-form {
   text-align: center;
-  margin-top: 1.5rem;
-  border: 1px solid black; }
+  margin-top: 1rem; }
+
+.get-started__input {
+  height: 40px !important;
+  width: 180px !important;
+  font-size: 1vw !important;
+  font-weight: 600 !important;
+  color: #c2c9db !important;
+  border-radius: 8px 0 0 8px !important;
+  background: #ffffff 0% 0% no-repeat padding-box !important;
+  box-shadow: 0px 35px 55px #0000000f !important;
+  border: 1px solid #e5e5e5 !important; }
+
+.get-started__input::placeholder {
+  color: #c2c9db !important; }
+
+.get-started__btn {
+  background-color: #fe5a50 !important;
+  color: #fff !important;
+  border-radius: 0 8px 8px 0 !important;
+  font-weight: 600 !important;
+  border: none !important;
+  background: #fe5a50 0% 0% no-repeat padding-box !important;
+  box-shadow: 0px 8px 25px #fe5a506b !important;
+  width: 100px !important;
+  height: 40px; }
 
 html {
   /* font-size: 10px; */
@@ -116,7 +160,7 @@ body {
   background: #f5f5f5; }
 
 .heading {
-  border: solid 1px black; }
+  margin-top: 7rem; }
 
 .benefits-block {
   width: 80.1vw;
