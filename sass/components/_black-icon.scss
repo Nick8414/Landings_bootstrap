@@ -2,68 +2,68 @@
         .black-icon {
             @include icon-color($color-black);
             border-radius: 15px;
-            width: 125px !important;
+            width: 125px;
             height: 125px;
             box-shadow: 0px 8px 25px #21232266;
-            margin-bottom: 20%;
-            @media (max-width: 1680px) {
-                width: 100px !important;
-                height: 100px;
-            }
-            @media (max-width: 1440px) {
-                width: 75px !important;
-                height: 75px;
-            }
-            // @media (max-width: 1024px) {
-            //     width: 50px;
-            //     height: 50px;
+            margin-bottom: 50%;
+            // @media (max-width: 1680px) {
+            //     width: 100px !important;
+            //     height: 100px;
             // }
+            // @media (max-width: 1440px) {
+            //     width: 75px !important;
+            //     height: 75px;
+            // }
+            @media (max-width: 992px) {
+                width: 80px;
+                height: 80px;
+            }
             &__image {
                 width: 67px;
                 height: 81px;
-                @media (max-width: 1680px) {
-                    width: 57px;
-                    height: 71px;
-                }
-                @media (max-width: 1440px) {
-                    width: 47px;
-                    height: 61px;
-                }
-                // @media (max-width: 1024px) {
-                //     width: 37px;
-                //     height: 51px;
+                // @media (max-width: 1680px) {
+                //     width: 57px;
+                //     height: 71px;
                 // }
+                // @media (max-width: 1440px) {
+                //     width: 47px;
+                //     height: 61px;
+                // }
+                @media (max-width: 992px) {
+                    width: 39px;
+                    height: 51px;
+                }
             }
             &__image-zig-zag {
                 width: 74px;
                 height: 74px;
-                @media (max-width: 1680px) {
-                    width: 64px;
-                    height: 64px;
-                }
-                @media (max-width: 1440px) {
-                    width: 54px;
-                    height: 54px;
-                }
-                // @media (max-width: 1024px) {
-                //     width: 44px;
-                //     height: 44px;
+                // @media (max-width: 1680px) {
+                //     width: 64px;
+                //     height: 64px;
                 // }
+                // @media (max-width: 1440px) {
+                //     width: 54px;
+                //     height: 54px;
+                // }
+                @media (max-width: 992px) {
+                    width: 44px;
+                    height: 44px;
+                }
             }
             &__image-shield {
                 width: 65px;
                 height: 65px;
-                @media (max-width: 1680px) {
-                    width: 55px;
-                    height: 55px;
-                }
-                @media (max-width: 1440px) {
-                    width: 45px;
-                    height: 45px;
-                }
-                // @media (max-width: 1024px) {
-                //     width: 35px;
-                //     height: 35px;
+                // @media (max-width: 1680px) {
+                //     width: 55px;
+                //     height: 55px;
                 // }
+                // @media (max-width: 1440px) {
+                //     width: 45px;
+                //     height: 45px;
+                // }
+                @media (max-width: 992px) {
+                    width: 35px;
+                    height: 35px;
+                }
             }
         }
