@@ -1,7 +1,7 @@
 $max-screen-width: 1920px;
 .footer {
     max-width: $max-screen-width;
-    margin-top: 1%;
+    margin-top: 2%;
     //   margin-bottom: 65px;
     margin-left: auto;
     margin-right: auto;
@@ -12,7 +12,7 @@ $max-screen-width: 1920px;
 
 .footer-content {
     border-top: 1px solid #e5e5e5;
-    // margin-top: 50.6px;
+    padding-top: 3rem;
     border-bottom: 1px solid #e5e5e5;
 }
 
