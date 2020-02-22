@@ -7,11 +7,11 @@
     <title>SkillSquare</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="container-fluid p-0">
+    <div class="container-fluid">
         <div class="top-nav">
             <div class="row ">
                 <div class="col-md-auto p-0">
@@ -22,7 +22,18 @@
                 <!-- .col-md -->
                 <div class="top-nav_menu col-md-auto pl-0 pr-0 d-flex">
                     <div class="nav-item d-flex justify-content-center align-items-center">
-                        <a href="#"> Features </a>
+
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Features
+                            </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Staffing</a>
+                            <a class="dropdown-item" href="#">Employee records</a>
+                            <a class="dropdown-item" href="#">Leaves Management</a>
+                            <a class="dropdown-item link-click" href="#">Time tracking</a>
+                        </div>
+
+                        <!-- <a href="#"> Features </a> -->
                     </div>
                     <div class="nav-item d-flex justify-content-center align-items-center">
                         <a href="#"> Browse resume </a>
@@ -35,7 +46,7 @@
                 <div class="col-md d-flex justify-content-end align-items-center p-0 m-0 nav-item-sign">
                     <ul class="top-nav_menu">
                         <li><a href="#"> Sign In </a></li>
-                        <li><a href="#"> Sign Up </a></li>
+                        <li><a href="#" class="active"> Sign Up </a></li>
                     </ul>
                 </div>
                 <!-- /.col-md -->
@@ -222,7 +233,7 @@
                             Skillsquare is supposed to be a forever-free tool for startup founders and CEOs to save their time while hiring and managing remote teams. It's pretty simple. Give it a try.
                         </p>
                         <div class="btn-block ">
-                            <a href="# " class="btn btn-light btn-white-safe ">Sign up</a>
+                            <a href="#" class="btn btn-light btn-white-safe ">Sign up</a>
                         </div>
                     </div>
                 </div>

@@ -1,14 +1,16 @@
 $max-screen-width: 1920px;
 .top-nav {
     background-color: #fff;
-    // border: 1px solid #e5e5e5;
     max-width: $max-screen-width;
-    // margin: auto;
+    margin: auto;
     &_menu {
         list-style: none;
         padding: 0;
         margin: 0;
         display: flex;
+        .active {
+            color: #FE5A50
+        }
         .nav-item {
             border-right: 1px solid #e5e5e5;
             border-bottom: 1px solid #e5e5e5;
@@ -19,6 +21,9 @@ $max-screen-width: 1920px;
                 font-size: 1.4rem;
                 font-weight: 600;
                 padding: 15px 25px;
+                &:hover {
+                    color: #FE5A50 !important;
+                }
             }
         }
         li {
