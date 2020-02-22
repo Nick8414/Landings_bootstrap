@@ -260,3 +260,40 @@ body {
     font-size: 1.4rem !important;
     font-weight: 800 !important;
 }
+  
+.item-container {
+display: flex;
+flex-direction: column;
+height: 463px;
+}
+.icon-benefits {
+max-width: 150px;
+max-height: 150px;
+width: 40%;
+position: absolute;
+top: 0;
+left: 10%;
+}
+.text-container {
+color: #9da6ac;
+box-shadow: 0px 45px 165px #00000026;
+line-height: 36.42px;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+margin-top: 62.5px;
+background-color: white;
+border-radius: 25px;
+padding: 7em 2em 2em 2.5em;
+min-height: 278px;
+}
+.text-container p {
+display: inline-block;
+}
+
+.learn-more {
+display: flex;
+font-size: 1.5em;
+justify-content: space-between;
+color: #fe7068;
+}
