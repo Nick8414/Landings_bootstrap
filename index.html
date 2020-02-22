@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>SkillSquare</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="container-fluid p-0">
+    <div class="container-fluid">
         <div class="top-nav">
             <div class="row ">
                 <div class="col-md-auto p-0">
@@ -20,9 +20,20 @@
                     </div>
                 </div>
                 <!-- .col-md -->
-                <div class="top-nav_menu col-md-auto pl-0 d-flex">
+                <div class="top-nav_menu col-md-auto pl-0 pr-0 d-flex">
                     <div class="nav-item d-flex justify-content-center align-items-center">
-                        <a href="#"> Features </a>
+
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Features
+                            </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Staffing</a>
+                            <a class="dropdown-item" href="#">Employee records</a>
+                            <a class="dropdown-item" href="#">Leaves Management</a>
+                            <a class="dropdown-item link-click" href="#">Time tracking</a>
+                        </div>
+
+                        <!-- <a href="#"> Features </a> -->
                     </div>
                     <div class="nav-item d-flex justify-content-center align-items-center">
                         <a href="#"> Browse resume </a>
@@ -32,10 +43,10 @@
                     </div>
                 </div>
                 <!-- /.col-md -->
-                <div class="col-md d-flex justify-content-end align-items-center p-0 m-0">
+                <div class="col-md d-flex justify-content-end align-items-center p-0 m-0 nav-item-sign">
                     <ul class="top-nav_menu">
                         <li><a href="#"> Sign In </a></li>
-                        <li><a href="#"> Sign Up </a></li>
+                        <li><a href="#" class="active"> Sign Up </a></li>
                     </ul>
                 </div>
                 <!-- /.col-md -->
@@ -71,40 +82,40 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="d-flex justify-content-center">
-        <div class="d-flex block-container block2">
-            <div class="col-8">
-                <div class="block2__left">
-                    <img src="./img/Top.png" class="w-100" alt="top" />
-                    <img src="./img/Clip.png" class="w-100" alt="Browser" />
-                </div>
-            </div>
-            <div class="col-4 block2__right">
-                <div class="block2__right__header">
-                    Everything you need to get going
-                </div>
 
-                <div class="block2__right__list-item">
-                    <img src="./img/pen_2.svg" alt="" class="icon-img" />
-                    <span>Staffing Software</span>
+        <div class="d-flex justify-content-center">
+            <div class="d-flex block-container block2">
+                <div class="col-8">
+                    <div class="block2__left">
+                        <img src="./img/Top.png" class="w-100" alt="top" />
+                        <img src="./img/Clip.png" class="w-100" alt="Browser" />
+                    </div>
                 </div>
-                <div class="block2__right__list-item">
-                    <img src="./img/calendar.svg" alt="" class="icon-img" />
-                    <span>Time off Manager</span>
-                </div>
-                <div class="block2__right__list-item">
-                    <img src="./img/time_1.svg" alt="" class="icon-img" />
-                    <span>Employee attendance tracker</span>
-                </div>
-                <div class="block2__right__list-item">
-                    <img src="./img/paper_3.svg" alt="" class="icon-img" />
-                    <span>HR employee database</span>
-                </div>
-                <div class="block2__right__list-item__dashboard-btn-container">
-                    <img src="./img/settings_2.svg" alt="" class="icon-img" />
-                    <span>
+                <div class="col-4 block2__right">
+                    <div class="block2__right__header">
+                        Everything you need to get going
+                    </div>
+
+                    <div class="block2__right__list-item">
+                        <img src="./img/pen_2.svg" alt="" class="icon-img" />
+                        <span>Staffing Software</span>
+                    </div>
+                    <div class="block2__right__list-item">
+                        <img src="./img/calendar.svg" alt="" class="icon-img" />
+                        <span>Time off Manager</span>
+                    </div>
+                    <div class="block2__right__list-item">
+                        <img src="./img/time_1.svg" alt="" class="icon-img" />
+                        <span>Employee attendance tracker</span>
+                    </div>
+                    <div class="block2__right__list-item">
+                        <img src="./img/paper_3.svg" alt="" class="icon-img" />
+                        <span>HR employee database</span>
+                    </div>
+                    <div class="block2__right__list-item__dashboard-btn-container">
+                        <img src="./img/settings_2.svg" alt="" class="icon-img" />
+                        <span>
               Dashboard
               <div
                 class="block2__right__list-item__dashboard-btn-container__dashboard-btn-block"
@@ -115,187 +126,188 @@
                   >Learn more <img src="./img/arrow.png" />
                 </a></div
             ></span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="feeback-block">
-        <div class="row feeback-block">
-            <div class=" image-block d-flex flex-column justify-content-center align-items-center">
-                <div class="col-md-8 image-block__text">
-                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris quis nostrud nisi ut aliquip ex ea commodo
-                        consequat.”
-                    </p>
-                </div>
-                <div>
-                    <p class="image-block__author">Artur Demyanov, Designer</p>
-                </div>
-
-                <div class="dots-block d-flex justify-content-center">
-                    <div class="dot">
-                    </div>
-                    <div class="dot-not-active">
-                    </div>
-                    <div class="dot-not-active">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="better-block">
-        <div class="row better-block">
-            <div class="col-md-5">
-                <ul>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-auto">
-                                <div class=" black-icon d-flex justify-content-center align-items-center">
-                                    <img src="./img/decisions-icon.png" alt="" class="black-icon__image">
+        <div class="feeback-block">
+            <div class="row feeback-block">
+                <div class=" image-block d-flex flex-column justify-content-center align-items-center">
+                    <div class="col-md-8 image-block__text">
+                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris quis nostrud nisi ut aliquip ex ea
+                            commodo consequat.”
+                        </p>
+                    </div>
+                    <div>
+                        <p class="image-block__author">Artur Demyanov, Designer</p>
+                    </div>
+
+                    <div class="dots-block d-flex justify-content-center">
+                        <div class="dot">
+                        </div>
+                        <div class="dot-not-active">
+                        </div>
+                        <div class="dot-not-active">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="better-block">
+            <div class="row better-block">
+                <div class="col-md-5">
+                    <ul>
+                        <li>
+                            <div class="row">
+                                <div class="col-md-auto">
+                                    <div class=" black-icon d-flex justify-content-center align-items-center">
+                                        <img src="./img/decisions-icon.png" alt="" class="black-icon__image">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 better-block__list-text">
+                                    <h4>Better Decisions</h4>
+                                    <p>Collect, interview and compare potential hires.</p>
                                 </div>
                             </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-md-auto">
+                                    <div class=" black-icon d-flex justify-content-center align-items-center">
+                                        <img src="./img/zig-zag.png" alt="" class="black-icon__image-zig-zag">
+                                    </div>
+                                </div>
 
-                            <div class="col-md-6 better-block__list-text">
-                                <h4>Better Decisions</h4>
-                                <p>Collect, interview and compare potential hires.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-auto">
-                                <div class=" black-icon d-flex justify-content-center align-items-center">
-                                    <img src="./img/zig-zag.png" alt="" class="black-icon__image-zig-zag">
+                                <div class="col-md-6 better-block__list-text">
+                                    <h4>Better Operations</h4>
+                                    <p>Always be on top of what your employees are up to. Keep them disciplined and engaged without micromanagement.</p>
                                 </div>
                             </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-md-auto">
+                                    <div class=" black-icon d-flex justify-content-center align-items-center">
+                                        <img src="./img/Sheild@2x.png.png" alt="" class="black-icon__image-shield">
+                                    </div>
+                                </div>
 
-                            <div class="col-md-6 better-block__list-text">
-                                <h4>Better Operations</h4>
-                                <p>Always be on top of what your employees are up to. Keep them disciplined and engaged without micromanagement.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-auto">
-                                <div class=" black-icon d-flex justify-content-center align-items-center">
-                                    <img src="./img/Sheild@2x.png.png" alt="" class="black-icon__image-shield">
+                                <div class="col-md-6 better-block__list-text">
+                                    <h4>Better Communication</h4>
+                                    <p>Engage with your remote teams effortlessly. Communicate on all work conditions within the tool.</p>
                                 </div>
                             </div>
-
-                            <div class="col-md-6 better-block__list-text">
-                                <h4>Better Communication</h4>
-                                <p>Engage with your remote teams effortlessly. Communicate on all work conditions within the tool.</p>
-                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="right-block">
+                        <h1 class="right-block__header">
+                            Yours company data is safe at SkillSquare
+                        </h1>
+                        <p class="right-block__text ">
+                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris quis nostrud nisi ut aliquip ex ea commodo consequat. Ut enim
+                            ad minim veniam, quis nostrud exercitation ullamco laboris quis nostrud nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <div class="right-block__link">
+                            <a href="# ">Get started free <img src="./img/black-arrow.png " alt=" " style="margin-left: 21.2px "></a>
                         </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <div class="right-block">
-                    <h1 class="right-block__header">
-                        Yours company data is safe at SkillSquare
-                    </h1>
-                    <p class="right-block__text ">
-                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris quis nostrud nisi ut aliquip ex ea commodo consequat. Ut enim
-                        ad minim veniam, quis nostrud exercitation ullamco laboris quis nostrud nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                    <div class="right-block__link">
-                        <a href="# ">Get started free <img src="./img/black-arrow.png " alt=" " style="margin-left: 21.2px "></a>
                     </div>
                 </div>
+                <!-- /.col-md-7 -->
             </div>
-            <!-- /.col-md-7 -->
+            <!-- /.row -->
         </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.better-block -->
+        <!-- /.better-block -->
 
 
-    <div class="sign-up-block ">
-        <div class="row sign-up-block ">
-            <div class="sign-up-block col-md ">
-                <div class="sign-up-block__content ">
-                    <h3 class="sign-up-block-header ">Get started in seconds</h3>
-                    <p class="sign-up-block-text col-md-8 ">
-                        Skillsquare is supposed to be a forever-free tool for startup founders and CEOs to save their time while hiring and managing remote teams. It's pretty simple. Give it a try.
-                    </p>
-                    <div class="btn-block ">
-                        <a href="# " class="btn btn-light btn-white-safe ">Sign up</a>
+        <div class="sign-up-block ">
+            <div class="row sign-up-block ">
+                <div class="sign-up-block col-md ">
+                    <div class="sign-up-block__content ">
+                        <h3 class="sign-up-block-header ">Get started in seconds</h3>
+                        <p class="sign-up-block-text col-md-8 ">
+                            Skillsquare is supposed to be a forever-free tool for startup founders and CEOs to save their time while hiring and managing remote teams. It's pretty simple. Give it a try.
+                        </p>
+                        <div class="btn-block ">
+                            <a href="#" class="btn btn-light btn-white-safe ">Sign up</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
-    <footer class="footer ">
-        <div class="footer-nav ">
-            <div class="row ">
-                <div class="footer-content col-md d-flex justify-content-between ">
-                    <div class="col-md-auto footer-content-item ">
-                        <h3 class="footer-content-item-header ">Features</h3>
-                        <ul>
-                            <li><a href="# ">Staffing</a></li>
-                            <li><a href="# ">Employee records</a></li>
-                            <li><a href="# ">Leaves management</a></li>
-                            <li><a href="# ">Time tracking</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-auto footer-content-item ">
-                        <h3 class="footer-content-item-header ">For Companies</h3>
-                        <ul>
-                            <li>Browse Resumes</li>
-                            <li>Trust & Safety</li>
-                            <li>FAQ</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-auto footer-content-item ">
-                        <h3 class="footer-content-item-header ">For Job Seekers</h3>
-                        <ul>
-                            <li>Member Benefits</li>
-                            <li>Open Vacancies</li>
-                            <li>Submit CV</li>
-                        </ul>
-                    </div>
+        <footer class="footer ">
+            <div class="footer-nav ">
+                <div class="row ">
+                    <div class="footer-content col-md d-flex justify-content-between ">
+                        <div class="col-md-auto footer-content-item ">
+                            <h3 class="footer-content-item-header ">Features</h3>
+                            <ul>
+                                <li><a href="# ">Staffing</a></li>
+                                <li><a href="# ">Employee records</a></li>
+                                <li><a href="# ">Leaves management</a></li>
+                                <li><a href="# ">Time tracking</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-auto footer-content-item ">
+                            <h3 class="footer-content-item-header ">For Companies</h3>
+                            <ul>
+                                <li>Browse Resumes</li>
+                                <li>Trust & Safety</li>
+                                <li>FAQ</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-auto footer-content-item ">
+                            <h3 class="footer-content-item-header ">For Job Seekers</h3>
+                            <ul>
+                                <li>Member Benefits</li>
+                                <li>Open Vacancies</li>
+                                <li>Submit CV</li>
+                            </ul>
+                        </div>
 
-                    <div class="col-md-auto footer-content-item ">
-                        <h3 class="footer-content-item-header ">Skillsquare</h3>
-                        <ul>
-                            <li>About</li>
-                            <li>Contact</li>
-                            <li>News</li>
-                        </ul>
-                    </div>
+                        <div class="col-md-auto footer-content-item ">
+                            <h3 class="footer-content-item-header ">Skillsquare</h3>
+                            <ul>
+                                <li>About</li>
+                                <li>Contact</li>
+                                <li>News</li>
+                            </ul>
+                        </div>
 
-                    <div class="footer-content-item col-md ">
-                        <div class="d-flex justify-content-end ">
-                            <img src="./img/lang-icon.png " alt="lang-icon " />
-                            <select size="1 " class="lang-select " name=" " id=" ">
+                        <div class="footer-content-item col-md ">
+                            <div class="d-flex justify-content-end ">
+                                <img src="./img/lang-icon.png " alt="lang-icon" class="lang-img" />
+                                <select size="1 " class="lang-select " name=" " id=" ">
                   <option value="Eng ">English</option>
                   <option value="Ger ">German</option>
                 </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="col-md footer-footer d-flex justify-content-between ">
+                        <div>
+                            <img src="./img/Footer-Logotype.png " alt="Logo " />
+                        </div>
+                        <p>2019 Term of service | Privacy</p>
+                        <div>
+                            <img src="./img/fb.png " alt="fb_logo " />
+                            <img src="./img/LinkidnIcon.png " alt="link_logo " style="margin: 0 26px; " />
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="row ">
-                <div class="col-md footer-footer d-flex justify-content-between ">
-                    <div>
-                        <img src="./img/Footer-Logotype.png " alt="Logo " />
-                    </div>
-                    <p>2019 Term of service | Privacy</p>
-                    <div>
-                        <img src="./img/fb.png " alt="fb_logo " />
-                        <img src="./img/LinkidnIcon.png " alt="link_logo " style="margin: 0 26px; " />
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /.footer-nav -->
-    </footer>
+            <!-- /.footer-nav -->
+        </footer>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
