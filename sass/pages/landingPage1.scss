@@ -1,13 +1,21 @@
 $max-screen-width: 1920px;
 
 .block-container {
+  margin-top: 11.2rem;
   max-width: $max-screen-width;
-  padding: 2.5% 5%;
+  padding: 0 5%;
   @media (min-width: $max-screen-width) {
     padding: 50px 100px;
   }
+  @media (max-width: 992px) {
+    margin-top: calc(11.2rem/1.9);
+  }
 }
 .block2 {
+  &__active  {
+
+  }
+
   &__left {
     box-shadow: 0px 45px 165px #00000026;
     padding: 0 !important;
@@ -34,9 +42,16 @@ $max-screen-width: 1920px;
       @media (max-width: 1024px) {
         font-size: 26px;
       }
+      
     }
 
     &__list-item {
+      .active {
+        color: red;
+      }
+      &:hover {
+        cursor: pointer;
+      }
       display: flex;
       justify-content: flex-start;
       align-items: center;

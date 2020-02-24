@@ -17,8 +17,13 @@ body {
     background: #f5f5f5;
 }
 
-.heading {
-    margin-top: 7rem;
+
+
+.heading-block {
+    margin-top: 11.4rem;
+    @media (max-width: 992px) {
+        margin-top: calc(11.4rem / 1.9);
+    }
     &__header {
         font-size: 6.8rem;
         font-weight: 600;
@@ -27,17 +32,22 @@ body {
         }
     }
     &__text {
-        margin-top: 4rem;
+        margin-top: 2.3rem;
         font-size: 2rem;
         text-align: center;
         @media (max-width: 992px) {
             font-size: 1.6rem;
+            margin-top: calc(2.3rem/1.9);
         }
     }
 }
 
 .feeback-block {
     max-width: $max-screen-width;
+    margin-top: 10.3rem;
+    @media (max-width: 992px) {
+        margin-top: calc(10.3rem/1.9);
+    }
     margin-bottom: 4%;
     background-image: url('../img/Mountains.png');
     background-size: cover;
@@ -47,7 +57,8 @@ body {
     margin-left: auto;
     .image-block {
         width: 100%;
-        margin-top: 70px;
+        // margin-top: 70px;
+        padding: 5% 0;
     }
 }
 
@@ -69,6 +80,10 @@ body {
     }
 }
 
+.carousel-indicators {
+    padding-bottom: 2%;
+}
+
 .dots-block {
     margin-bottom: 50px;
 }
@@ -82,12 +97,12 @@ body {
 }
 
 .dot-not-active {
-    width: 10px;
-    height: 10px;
+    width: 10px !important;
+    height: 10px !important;
     border-radius: 100%;
     background: #fff;
     opacity: 40%;
-    margin-right: 17.3px;
+    margin-right: 17.3px !important;
 }
 
 
@@ -191,21 +206,14 @@ body {
 .sign-up-block-text {
     font-size: 2rem;
     color: #fff;
-    max-width: 7.9rem;
-    //   line-height: 31.33px;
     letter-spacing: 0.9px;
-    margin-top: 16.1px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2%;
-    text-align: center;
-    // @media (max-width: 1680px) {
-    //     font-size: 16px;
-    // }
+    margin-top: 1.6rem;
+    margin-bottom: 2rem;
     @media (max-width: 992px) {
         font-size: 1.6rem;
-    }
+    } 
 }
+
 
 .btn-block {
     text-align: center;
@@ -222,23 +230,64 @@ body {
     font-weight: 800 !important;
 }
 
+
+// .benefits-container {
+//     margin-top: 5.5rem;
+//     @media (max-width: 992px) {
+//         margin-top: calc(5.5rem/1.9);
+//     }
+// }
+
+.benefits-container-content {
+    margin-top: 5.5rem;
+    @media (max-width: 992px) {
+        margin-top: calc(5.5rem/1.9);
+    }
+    height: fit-content;
+    width: fit-content;
+    max-width: 1920px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    
+}
+
 .item-container {
     display: flex;
     flex-direction: column;
     height: 463px;
-    margin: 0 2em;
+    position: relative;
+    padding:0 15%;
+    @media (max-width: 1440px) {
+        padding:0 10%;
+    }
+    @media (max-width: 992px) {
+        padding:0 5%;
+    }
+}
+
+.icon-container {
+    position: absolute;
+    top: -1%;
+    left: 20%;
+    @media (max-width: 992px) {
+        top: 5%;
+        left: 10%;
+    }
 }
 
 .icon-benefits {
     max-width: 150px;
     max-height: 150px;
-    width: 40%;
-    position: absolute;
-    top: 0;
-    left: 10%;
+    // width: 40%;
+    @media (max-width: 992px) {
+        max-width: 100px;
+        max-height: 100px; 
+    }
+    
 }
 
 .text-container {
+    margin-top: 60px;
     color: #9da6ac;
     box-shadow: 0px 45px 165px #00000026;
     line-height: 36.42px;
@@ -255,6 +304,7 @@ body {
         flex-grow: 1;
     }
     h4 {
+        margin-top: 20px;
         color: #585B60;
     }
 }
