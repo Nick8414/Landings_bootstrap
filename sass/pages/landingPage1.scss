@@ -1,10 +1,15 @@
 $max-screen-width: 1920px;
+$primary-color: #FE5A50;
 
 .block-container {
+  margin-top: 11.2rem;
   max-width: $max-screen-width;
-  padding: 2.5% 5%;
+  padding: 0 5%;
   @media (min-width: $max-screen-width) {
     padding: 50px 100px;
+  }
+  @media (max-width: 992px) {
+    margin-top: calc(11.2rem/1.9);
   }
 }
 .block2 {
@@ -34,9 +39,21 @@ $max-screen-width: 1920px;
       @media (max-width: 1024px) {
         font-size: 26px;
       }
+      
     }
 
     &__list-item {
+      .active {
+        color: #FE5A50;
+        font-weight: 600;
+        fill: #FE5A50; 
+      }
+      &:hover {
+        cursor: pointer;
+      }
+      &:last-child {
+        height: 0;
+      }
       display: flex;
       justify-content: flex-start;
       align-items: center;
@@ -80,62 +97,15 @@ $max-screen-width: 1920px;
         }
       }
 
-      &__dashboard-btn-container {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-
-        height: 100px;
-        padding-left: 15%;
-
-        @media (max-width: 1680px) {
-          height: 90px;
-        }
-        @media (max-width: 1440px) {
-          height: 70px;
-        }
-
-        @media (max-width: 1024px) {
-          height: 50px;
-        }
-
-        & > img {
-          width: 25px;
-          height: 25px;
-
-          @media (max-width: 1440px) {
-            width: 18px;
-            height: 18px;
-          }
-        }
-
-        & > span {
-          padding-left: 5%;
-          font-size: 24px;
-          letter-spacing: 0;
-          color: #fe5a50;
-          font-weight: bold;
-
-          width: 100%;
-          position: relative;
-
-          @media (max-width: 1680px) {
-            font-size: 18px;
-          }
-          @media (max-width: 1024px) {
-            font-size: 14px;
-          }
-        }
-
         &__dashboard-btn-block {
-          position: absolute;
-          top: 40px;
-
-          @media (max-width: 1024px) {
-            top: 25px;
-          }
+          padding-left: calc(25px + 5%);
+  
+          // @media (max-width: 1024px) {
+          //   top: 25px;
+          // }
 
           &__dashboard-btn {
+            width: 100%;
             text-transform: uppercase;
             text-decoration: none;
             padding: 5px 30px 5px 20px;
@@ -165,7 +135,7 @@ $max-screen-width: 1920px;
             }
           }
         }
-      }
+      //}
     }
   }
 }
