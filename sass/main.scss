@@ -189,15 +189,9 @@ body {
 .sign-up-block-header {
     font-size: 4.8rem;
     font-weight: 600;
-    // line-height: 4.8vh;
     letter-spacing: 1px;
     color: #fff;
     text-align: center;
-    //   margin-top: 2rem;
-    //   padding-top: 2rem;
-    // @media (max-width: 1680px) {
-    //     font-size: 36px;
-    // }
     @media (max-width: 992px) {
         font-size: 3rem;
     }
@@ -217,7 +211,6 @@ body {
 
 .btn-block {
     text-align: center;
-    // padding-top: 33px;
 }
 
 .btn-white-safe {
@@ -229,14 +222,6 @@ body {
     font-size: 1.4rem !important;
     font-weight: 800 !important;
 }
-
-
-// .benefits-container {
-//     margin-top: 5.5rem;
-//     @media (max-width: 992px) {
-//         margin-top: calc(5.5rem/1.9);
-//     }
-// }
 
 .benefits-container-content {
     margin-top: 5.5rem;
@@ -323,5 +308,13 @@ body {
     font-weight: 600;
     @media (max-width: 992px) {
         font-size: 1.4rem;
+    }
+    a {
+        &:link,
+        &:hover,
+        &:visited {
+            text-decoration: none;
+            color: #fe7068;
+        }
     }
 }

@@ -99,20 +99,16 @@ $primary-color: #FE5A50;
 
         &__dashboard-btn-block {
           padding-left: calc(25px + 5%);
-  
-          // @media (max-width: 1024px) {
-          //   top: 25px;
-          // }
-
+          
           &__dashboard-btn {
-            width: 100%;
+            width: max-content;
             text-transform: uppercase;
             text-decoration: none;
             padding: 5px 30px 5px 20px;
-            display: inline-block;
+            display: block;
             border-radius: 5px;
             transition: all 0.2s;
-            position: relative;
+           
             font-size: 14px;
             background-color: #fe5a50;
             color: #fff;

@@ -49,10 +49,17 @@ li {
 
 .footer-footer {
     margin-top: 42.5px;
+    margin-bottom: 6.5rem;
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 31.8px;
     color: #9da6ac;
+    a:link,
+    a:hover,
+    a:visited {
+        text-decoration: none;
+        color: #9da6ac;
+    }
 }
 
 .lang-img {
